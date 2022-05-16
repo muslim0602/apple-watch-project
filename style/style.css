@@ -182,7 +182,7 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
 .site-hero{
-background-image: url("../img/intro-bg@2x.jpg");;
+  background-image: url("../img/intro-bg@2x.jpg");
 }
 
 }
