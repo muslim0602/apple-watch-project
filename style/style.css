@@ -51,6 +51,8 @@ img{
 .button {
   display: inline-block;
   padding: 12px 38px;
+  min-width: 260px;
+  text-align: center;
   border: 0;
   background-color: var(--primary-color);
   color: #fff;
@@ -239,6 +241,46 @@ img{
 .learn-more-link:hover::before{
   width: 60px;
 }
+
+/* PROMO */
+
+.site-promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.site-promo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+.site-footer {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url("../img/runners.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.footer-lead-cta .lead-cta-heading{
+  color: #fff;
+}
+.footer-lead-cta  .lead-cta-text{
+  color: #fff;
+  border-color: #fff;
+}
+.footer-lead-cta {
+  margin-left: auto;
+}
+
 /* RETINA-BACKFGROUND-IMAGE */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -250,6 +292,22 @@ only screen and (                min-resolution: 2dppx) {
 
 .site-hero{
   background-image: url("../img/intro-bg@2x.jpg");
+}
+
+}
+
+
+/* SITE_FOOTER_RETINA-BACKFGROUND-IMAGE */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+.site-footer{
+  background-image: url("../img/runners@2x.jpg");
 }
 
 }
